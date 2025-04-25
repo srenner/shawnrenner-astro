@@ -11,22 +11,32 @@
       <h1 class="display-5 fw-bold text-body-emphasis">Shawn Renner</h1>
       <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">
-				I am an experienced full stack software developer in the Saint Louis, Missouri area.
-				<br>
-				You can <a href="shawn-renner.pdf">download my resume here.</a> Phone calls by appointment.
-          
+          I am an experienced full stack software developer in the Saint Louis,
+          Missouri area.
+          <br />
+          You can <a href="shawn-renner.pdf">download my resume here.</a> Phone calls
+          by appointment.
+
           <div id="tags">
-            <span class="badge rounded-pill bg-dark text-bg-dark"
-              >.NET</span
+            <span
+              class="badge rounded-pill bg-dark text-bg-dark clickable"
+              data-bs-toggle="modal"
+              data-bs-target="#dotnet">.NET</span
             >
-            <span class="badge rounded-pill bg-dark text-bg-dark"
-              >JavaScript</span
+            <span
+              class="badge rounded-pill bg-dark text-bg-dark clickable"
+              data-bs-toggle="modal"
+              data-bs-target="#javascript">JavaScript</span
             >
-            <span class="badge rounded-pill bg-dark text-bg-dark"
-              >SQL</span
+            <span
+              class="badge rounded-pill bg-dark text-bg-dark clickable"
+              data-bs-toggle="modal"
+              data-bs-target="#sql">SQL</span
             >
-            <span class="badge rounded-pill bg-dark text-bg-dark"
-              >DevOps</span
+            <span
+              class="badge rounded-pill bg-dark text-bg-dark clickable"
+              data-bs-toggle="modal"
+              data-bs-target="#devops">DevOps</span
             >
           </div>
         </p>
@@ -40,14 +50,149 @@
             <img src="/github.svg" width="36" height="36" />
           </a>
         </div>
-
       </div>
     </div>
+
+    <!-- .NET modal -->
+    <div id="dotnet" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">.NET</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              I started using .NET in the early days of .NET Framework 1.1 with
+              WebForms and WinForms, and I still use .NET today with .NET 9.
+            </p>
+            <p>
+              My primary focus today is to use .NET for Web API, business logic
+              class libraries, and background services.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">Close</button
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.NET modal -->
+
+    <!-- JavaScript modal -->
+    <div id="javascript" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">JavaScript</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              I've built applications with vanilla JavaScript, jQuery, React,
+              Vue, and Angular.
+            </p>
+            <p>
+              My current career focus is Angular, but I also like to use Vue for
+              personal projects.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">Close</button
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /JavaScript modal -->
+
+    <!-- SQL modal -->
+    <div id="sql" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">SQL</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Most of my career experience has been with SQL Server, but I have
+              also worked with Oracle, MySQL/MariaDB, and PostgreSQL.
+            </p>
+            <p>
+              For smaller projects, I find that SQLite works with .NET and
+              Entity Framework really well.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">Close</button
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /SQL modal -->
+
+    <!-- DevOps modal -->
+    <div id="devops" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">DevOps</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              I have experience with Jenkins and TeamCity, but most of my DevOps
+              and CI/CD experience is with Azure DevOps. I also use GitHub
+              actions to deploy smaller projects to GitHub pages.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">Close</button
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /DevOps modal -->
   </main>
 </div>
 
 <style>
   a {
     text-decoration: none;
+  }
+  .clickable {
+    cursor: pointer;
   }
 </style>
